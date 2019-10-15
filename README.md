@@ -14,15 +14,15 @@ Projeto desenvolvido para fins de fixação de aprendizagem.
 ## Cronograma de Desenvolvimento
 **HTML e CSS**
 - [ ] Mobile:
-  - [ ] Inicio
+  - [x] Inicio
   - [ ] Seleção
   - [ ] Resultado
 - [ ] Tablet:
-  - [ ] Inicio
+  - [x] Inicio
   - [ ] Seleção
   - [ ] Resultado
 - [ ] DeskTop:
-  - [ ] Inicio
+  - [x] Inicio
   - [ ] Seleção
   - [ ] Resultado
 
