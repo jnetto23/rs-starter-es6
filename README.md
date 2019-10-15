@@ -13,18 +13,18 @@ Projeto desenvolvido para fins de fixação de aprendizagem.
 
 ## Cronograma de Desenvolvimento
 **HTML e CSS**
-- [ ] Mobile:
+- [x] Mobile:
   - [x] Inicio
-  - [ ] Seleção
-  - [ ] Resultado
-- [ ] Tablet:
+  - [x] Seleção
+  - [x] Resultado
+- [x] Tablet:
   - [x] Inicio
-  - [ ] Seleção
-  - [ ] Resultado
-- [ ] DeskTop:
+  - [x] Seleção
+  - [x] Resultado
+- [x] DeskTop:
   - [x] Inicio
-  - [ ] Seleção
-  - [ ] Resultado
+  - [x] Seleção
+  - [x] Resultado
 
   **JavaScrip**
   - [ ] Intações com DOM
