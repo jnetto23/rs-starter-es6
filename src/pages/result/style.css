@@ -1,0 +1,225 @@
+/* Result */
+.result-view .container {
+    flex-direction: column;
+}
+.qualific {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 30px auto;
+}
+.result {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.result .result-user {
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px dashed; 
+}
+.result .result-1,
+.result .result-2,
+.result .result-3 {
+    flex:1;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0 5px;
+    align-items: center !important;
+}
+.result .result-2,
+.result .result-3 {
+    margin-top: 70px;
+}
+.result .result-1 {
+    margin: 5px;
+}
+.result .result-2,
+.result .result-3 {
+    margin-top: 30px;
+}
+.podium {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px
+}
+.podium .corpo {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #bd7e00;
+    padding: 0 15px;
+}
+.podium .corpo .podium-1,
+.podium .corpo .podium-2,
+.podium .corpo .podium-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.podium .corpo .podium-1 {
+    margin: 0 5px;
+}
+.podium .corpo .podium-1 div.corpo,
+.podium .corpo .podium-2 div.corpo,
+.podium .corpo .podium-3 div.corpo {
+    justify-content: center;
+    align-items: center;
+    background: #ffa000;
+}
+.podium .corpo .podium-1 div.corpo {
+    border-left: 1px solid #bd7e00;
+    border-right: 1px solid #bd7e00;
+    font-size: 35px;
+}
+.podium .corpo .podium-2 {
+    margin-top: 25px;
+    margin-right: -7px;
+}
+.podium .corpo .podium-2 div.corpo {
+    border-left: 1px solid #bd7e00;
+    margin-right: -1px;
+    z-index: 1;
+}
+.podium .corpo .podium-3 {
+    margin-top: 25px;
+    margin-left: -7px;
+}
+.podium .corpo .podium-3 div.corpo {
+    border-right: 1px solid #bd7e00;
+    margin-left: -1px;
+    z-index: 1;
+}
+.podium .corpo .podium-1 span.top,
+.podium .corpo .podium-2 span.top,
+.podium .corpo .podium-3 span.top {
+    height: 10px;
+    background: #ffa000;
+    border: 1px solid #bd7e00;
+    z-index: -1;
+    margin-bottom: -2px !important;
+    border-radius: 7px;
+}
+.podium .corpo .podium-1 span.top {
+    margin: 0 -5px;
+}
+.podium .corpo .podium-2 span.top {
+    margin-left: -5px;
+}
+.podium .corpo .podium-3 span.top {
+    margin-right: -5px;
+}
+.podium .base,
+.podium .base-2, 
+.podium .base-3 {
+    width: 100%;
+}
+.podium .base span, 
+.podium .base-2 span, 
+.podium .base-3 span  {
+    border: 1px solid #bd7e00;
+    background: #ffa000;
+    height: 10px;
+    display: block;
+}
+.podium .base {
+    z-index: -1;
+}
+.podium .base span {
+    margin: 0 10px;
+    margin-top: -1px;
+    border-bottom: 0;
+}
+.podium .base-2 {
+    z-index: -2;
+}
+.podium .base-2 span {
+    margin: 0 5px;
+    margin-top: -1px;
+    border-bottom: 0;
+}
+.podium .base-3 {
+    z-index: -3;
+    margin-top: -1px;
+}
+.tables {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tables .tabela {
+    margin: 0 10px 25px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tables .tabela span.title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.tables .tabela span.title-helper {
+    font-size: 12px;
+    color: #2b3137;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.tables .tabela table {
+    border-collapse: collapse;
+}
+.tables .tabela table,
+.tables .tabela table th,
+.tables .tabela table td {
+    padding: 5px;
+    border: 1px solid #2b3137;
+    text-align: center;
+}
+.tables .tabela table th {
+    background: #2b3137;
+    color: #fff;
+}
+.tables .tabela table tbody tr {
+    font-size: 14px;
+}
+.tables .tabela table tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+.tables .tabela table tbody tr:hover {
+     background-color: #2b313759;
+}
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) {
+    .qualific {
+        max-width: 500px;
+        width: 500px;
+    }
+    .tables .tabela {
+        width: calc(50% - 20px);
+    }
+    .resumo.tables .tabela {
+        width: 50%;
+    }
+}
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) {
+    .tables .tabela {
+        width: calc(33.33% - 40px);
+    }
+    .resumo.tables .tabela {
+        width: 50%;
+    }   
+}

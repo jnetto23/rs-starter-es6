@@ -27,11 +27,9 @@ Projeto desenvolvido para fins de fixação de aprendizagem.
   - [x] Resultado
 
   **JavaScrip**
-  - [ ] Intações com DOM
-  - [ ] Requisições API
-  - [ ] Montagem/Interações com View Inicio
-  - [ ] Montagem/Interações com View de Seleção
-  - [ ] Montagem/Interações com Viem de Resultado
+  - [x] Montagem/Interações com View Inicio
+  - [x] Montagem/Interações com View de Seleção
+  - [x] Montagem/Interações com Viem de Resultado
 
   **Outros**
   - [ ] Build da aplicação

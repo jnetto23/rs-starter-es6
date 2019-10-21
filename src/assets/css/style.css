@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none;}
+a:visited {color: rgb(0, 0, 238);}
+a:hover {text-decoration: underline;}
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+input::placeholder {
+    font-size: 16px;
+    font-style: italic;
+}
+hr {
+    width: 100%;
+    background-color: #2b3137;
+    height: 3px;
+    margin: 20px 0;
+}
+html {
+    height: 100%;
+    min-height: 100%;
+}
+.d-none {
+    display: none !important;
+}
+body {
+    background: #ccc;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+#app header,
+#app main.init-view,
+#app footer {
+    display: flex;
+    background: url(https://github.com/images/modules/site/heroes/simple-codelines.svg),#2b3137;
+    background-position: center 10%;
+    background-size: cover;
+    height: 70px;
+}
+/* Header */
+#app header {
+    align-items: center;
+}
+#app header .container {
+    justify-content: center;
+}
+#app header .container #logo {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+#app header .container #logo svg {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1px;
+}
+#app header .container #logo span {
+    font-family: 'Bangers', cursive;
+    color: #fff;
+    font-size: 35px;
+    margin: 0 15px;
+}
+/* Main */
+#app main.init-view,
+#app main {
+    height: calc(100vh - 140px);
+    display: flex;
+}
+#app main.init-view {
+    justify-content: center;
+    align-items: center;
+}
+#app main.multi-players,
+#app main.result-view {
+    height: auto;
+    margin-bottom: 50px;
+}
+/* Footer */
+#app footer {
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    bottom: 0;
+    margin-top: auto;   
+}
+#app footer a {
+    margin: 0 10px;
+    color: #fff;
+}
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) {
+    .container {
+        padding: 5px 30px;
+        max-width: 992px;
+    }
+}

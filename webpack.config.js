@@ -1,5 +1,7 @@
 const path = require('path');
+const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
     entry: ["@babel/polyfill", "./src/main.js"],
@@ -21,12 +23,19 @@ module.exports = {
                 },
             },
         },
+        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
     },
     module: {
         rules: [
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
+            {
+                test: /\.(png|jpg|gif|svg|mp3)$/,
+                use: {
+                    loader: 'file-loader'
+                }
             },
             {
                 test: /\.js$/, 

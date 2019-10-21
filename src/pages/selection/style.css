@@ -1,0 +1,119 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form span.form-desc {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+form input {
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+form input::placeholder {
+    font-size: 15px;
+}
+.close {
+    height: fit-content;
+    color: #ccc;
+    font-size: 25px;
+    background-color: transparent;
+}
+.close:hover {
+    color: #2b3137;
+}
+
+.commands {
+    position: fixed;
+    width: 70px;
+    height: auto;
+    padding: 5px;
+    background: transparent;
+    bottom: 25px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.players {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.players img.vs {
+    height: 150px;
+    align-self: center;
+    margin: 10px;
+}
+.two-players .players img.vs,
+.multi-players .players img.vs {
+    height: 50px;
+    align-self: center;
+}
+.player {
+    width: 100%;
+    max-width: 450px;
+    min-height: 130px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #2b3137;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.player:hover{
+    box-shadow: 0px 0px 15px #2b3137;
+}
+.player button.close {
+    padding: 5px;
+}
+.player img.player-self {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px dashed;
+}
+.player .player-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: calc(100% - 118px);
+}
+.player .player-info .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.player .player-info .login {
+    color: rgb(145, 143, 143);
+    font-size: 15px;
+    margin-top: -5px;
+}
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) {
+    .commands {
+        right: 40px;
+    }
+}
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) {
+    .two-players .players {
+        flex-direction: row;
+    }
+    .two-players .players img.vs {
+        margin: 10px 50px;
+    }    
+}

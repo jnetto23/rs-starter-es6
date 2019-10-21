@@ -1,0 +1,55 @@
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 5px var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 15px var(--cor-neon));
+    }
+}
+button {
+    background-color: #2ebc4f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: fit-content;
+    cursor: pointer;
+}
+button:hover:not(.close, .start-btn) {
+    background-color: #43a047;
+}
+button.start-btn {
+    width: fit-content;
+    padding: .84rem 1.68rem;
+    background-color: transparent;
+    border: .15rem dashed yellow;
+    animation: neon 0.5s alternate infinite ease-in-out;
+    --cor-neon: #ffbe0b;
+}
+button span.start-text {
+    font-weight: bold;
+    font-size: 1.33rem;
+}
+button.btn-flutuante-add, 
+button.btn-flutuante-fight {
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+button.btn-flutuante-fight {
+    margin-top: 15px;
+    background-color: red;
+}
+button.btn-flutuante-fight:hover {
+    background-color: #d50000;
+}
+button.btn-flutuante-fight img {
+    width: 40px;
+    height: 40px;
+}
