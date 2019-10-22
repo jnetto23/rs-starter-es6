@@ -37,9 +37,6 @@ html {
 .d-none {
     display: none !important;
 }
-body {
-    background: #ccc;
-}
 #app {
     display: flex;
     flex-direction: column;
@@ -48,6 +45,7 @@ body {
 }
 #app header,
 #app main.init-view,
+#app main.result-view.loading,
 #app footer {
     display: flex;
     background: url(https://github.com/images/modules/site/heroes/simple-codelines.svg),#2b3137;
@@ -72,7 +70,8 @@ body {
     border-radius: 50%;
     padding: 1px;
 }
-#app header .container #logo span {
+#app header .container #logo span, 
+#app main.result-view.loading {
     font-family: 'Bangers', cursive;
     color: #fff;
     font-size: 35px;
@@ -80,11 +79,16 @@ body {
 }
 /* Main */
 #app main.init-view,
+#app main.result-view.loading,
 #app main {
     height: calc(100vh - 140px);
     display: flex;
 }
-#app main.init-view {
+#app main.result-view.loading {
+    margin: 0;
+}
+#app main.init-view,
+#app main.result-view.loading {
     justify-content: center;
     align-items: center;
 }

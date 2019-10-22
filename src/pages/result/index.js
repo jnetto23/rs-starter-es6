@@ -13,18 +13,10 @@ export default class Result {
     async render() {
         let main = document.createElement('main');
         main.classList.add('result-view');
+        main.classList.add('loading');
+        main.appendChild(document.createTextNode('Loading...'))
         
-        let r = await this.renderResut();
-        main.appendChild(r);
-        
-        let audio = document.createElement('audio');
-        audio.setAttribute('autoplay', '');
-        
-        let mp3src = document.createElement('source');
-        mp3src.setAttribute('src', mp3);
-        audio.appendChild(mp3src);
-        
-        main.appendChild(audio);
+        this.renderResut();
         return main;
     };
 
@@ -49,7 +41,19 @@ export default class Result {
         let tables = await this.tablesEl();
         container.appendChild(tables);
 
-        return container;
+        let main = document.querySelector('main');
+        main.innerHTML = '';
+        main.classList.remove('loading');
+        main.appendChild(container);
+        
+        let audio = document.createElement('audio');
+        audio.setAttribute('autoplay', '');
+        
+        let mp3src = document.createElement('source');
+        mp3src.setAttribute('src', mp3);
+        audio.appendChild(mp3src);
+        
+        main.appendChild(audio);
     };
 
     qualificEl() {

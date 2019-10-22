@@ -43,7 +43,7 @@ button.btn-flutuante-fight {
     justify-content: center;
 }
 button.btn-flutuante-fight {
-    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: red;
 }
 button.btn-flutuante-fight:hover {

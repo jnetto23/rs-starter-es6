@@ -9,6 +9,7 @@ Projeto desenvolvido para fins de fixação de aprendizagem.
 **Modulo:** ES6  
 
 **[Aulas do Curso](https://github.com/jnetto23/dev_study/tree/master/rocketseat/starter/javascript-es6)**  
+**[Projeto Final](https://jnetto23.github.io/rs-starter-es6/)** 
 
 
 ## Cronograma de Desenvolvimento
@@ -32,5 +33,5 @@ Projeto desenvolvido para fins de fixação de aprendizagem.
   - [x] Montagem/Interações com Viem de Resultado
 
   **Outros**
-  - [ ] Build da aplicação
-  - [ ] Deploy no GitHub Pages
+  - [x] Build da aplicação
+  - [x] Deploy no GitHub Pages

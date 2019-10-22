@@ -27,7 +27,9 @@ export default class Selection {
                     img.setAttribute('src', imgFigth);
                     img.setAttribute('alt', 'img btn figth');
                     btnFigth.appendChild(img);
-                    (document.querySelector('.commands')).appendChild(btnFigth);
+                    let commands = document.querySelector('.commands');
+                    let btnAdd = document.querySelector('.commands button.btn-flutuante-add'); 
+                    commands.insertBefore(btnFigth, btnAdd);
                 }
             }
 
