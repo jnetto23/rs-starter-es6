@@ -11,8 +11,7 @@ Projeto desenvolvido para fins de fixação de aprendizagem.
 **[Projeto Final](https://jnetto23.github.io/rs-starter-es6/)** 
 
 
-<img src="https://github.com/jnetto23/rs-starter-es6/blob/master/screenshots/git-combate.png" title="screenshots">
-
+<img src="https://github.com/jnetto23/rs-starter-es6/blob/master/src/screenshots/git-combate.png" title="screenshots">
 
 
 ## Cronograma de Desenvolvimento
