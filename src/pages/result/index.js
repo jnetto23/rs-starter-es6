@@ -265,6 +265,10 @@ export default class Result {
             pos.appendChild(document.createTextNode(i));            
             let name = document.createElement('td');
             name.appendChild(document.createTextNode(this.getNameByLogin(user.login)));
+            let span = document.createElement('span');
+            span.classList.add('login');
+            span.appendChild(document.createTextNode(` (${user.login})`));
+            name.appendChild(span);
             let ptsEl = document.createElement('td');
             ptsEl.appendChild(document.createTextNode(user.pts));
             tr.appendChild(pos);
@@ -290,7 +294,10 @@ export default class Result {
 
     getNameByLogin(login) {
         for(let user of this.users) {
-            if(user.login === login) return user.name;
+            if(user.login === login) {
+                let name = user.name || 'Não Informado';
+                return name;
+            };
         };
     };
 

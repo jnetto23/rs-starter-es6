@@ -172,8 +172,9 @@ export default class Selection {
 
     createPlayerEl(user) {
 		
-		let {login, name, avatar_url} = this.users[user] || this.users[0];
-		
+        let {login, name, avatar_url} = this.users[user] || this.users[0];
+        name = name || 'Não Informado';
+        
 		let player = document.createElement('div');
         player.classList.add('player');
         player.setAttribute('data-user', login);

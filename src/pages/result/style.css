@@ -188,6 +188,9 @@
     border: 1px solid #2b3137;
     text-align: center;
 }
+.tables .tabela table td span.login {
+    font-size: 12px;
+}
 .tables .tabela table th {
     background: #2b3137;
     color: #fff;
