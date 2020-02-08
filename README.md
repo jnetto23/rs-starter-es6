@@ -1,39 +1,11 @@
-# GitHub Combate
-
-JavaScrip ES6.  
-Projeto desenvolvido para fins de fixação de aprendizagem.  
-
-**[Rocketseat](https://skylab.rocketseat.com.br/)**  
-**Curso:** Starter  
-**Modulo:** ES6  
-
-**[Aulas do Curso](https://github.com/jnetto23/dev_study/tree/master/rocketseat/starter/javascript-es6)**  
-**[Projeto Final](https://jnetto23.github.io/rs-starter-es6/)** 
-
+# Git-Combate
 
 <img src="https://github.com/jnetto23/rs-starter-es6/blob/master/src/screenshots/git-combate.png" title="screenshots">
 
+## Objective/Challenge
+Consuming data from the Github API
+The project's challenge was to find the best way to render the information on screen using synchronous javascript (async/ wait).
 
-## Cronograma de Desenvolvimento
-**HTML e CSS**
-- [x] Mobile:
-  - [x] Inicio
-  - [x] Seleção
-  - [x] Resultado
-- [x] Tablet:
-  - [x] Inicio
-  - [x] Seleção
-  - [x] Resultado
-- [x] DeskTop:
-  - [x] Inicio
-  - [x] Seleção
-  - [x] Resultado
 
-  **JavaScrip**
-  - [x] Montagem/Interações com View Inicio
-  - [x] Montagem/Interações com View de Seleção
-  - [x] Montagem/Interações com Viem de Resultado
+**[Final Project](https://jnetto23.github.io/rs-starter-es6/)** 
 
-  **Outros**
-  - [x] Build da aplicação
-  - [x] Deploy no GitHub Pages
