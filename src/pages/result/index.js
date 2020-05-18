@@ -349,7 +349,7 @@ export default class Result {
     cb2() {
         let cb2 = {};
         cb2.title = 'Nº de Seguidores';
-        cb2.helper = '(1 ponto p/ repo)';
+        cb2.helper = '(1 ponto p/ seguidor)';
         
         let dataCb2 = [];
         for(let [i, user] of this.users.entries()) {

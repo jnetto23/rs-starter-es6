@@ -7,5 +7,5 @@ Consuming data from the Github API
 The project's challenge was to find the best way to render the information on screen using synchronous javascript (async/ wait).
 
 
-**[Final Project](https://jnetto23.github.io/rs-starter-es6/)** 
+**[Final Project](https://fyyb.com.br/preview/git-combate)** 
 

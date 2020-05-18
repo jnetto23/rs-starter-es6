@@ -120,3 +120,9 @@ html {
         max-width: 992px;
     }
 }
+.copyright {
+    text-align: center;
+}
+.copyright a {
+    color: #fff;
+}
